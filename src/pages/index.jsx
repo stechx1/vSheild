@@ -13,7 +13,13 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className='container mx-auto'>
-        <HeroSection/>
+        <HeroSection
+          header={'fully dedicated resources'}
+          heading='Virtual Dedicated Servers'
+          para={
+            'Servers with fully dedicated resources, KVM virtualization and insane network speeds starting at $11.99/month'
+          } imgSrc="/images/servers-tiny.png"
+        />
       </div>
     </div>
   );

@@ -6,22 +6,17 @@ export const HeroSection = ({ header, heading, para, imgSrc }) => {
     <div className='flex flex-col md:flex-row justify-between items-center'>
       <div className='max-w-[600px] space-y-6'>
         <div>
-          <h3 className='uppercase font-bold text-gray-400'>
-            Fully dedicated resources
-          </h3>
-          <h1 className='text-6xl'>Virtual Dedicated Servers</h1>
+          <h3 className='uppercase font-bold text-gray-400'>{header}</h3>
+          <h1 className='text-6xl'>{heading}</h1>
         </div>
-        <p className='text-gray-300'>
-          Servers with fully dedicated resources, KVM virtualization and insane
-          network speeds starting at $11.99/month
-        </p>
+        <p className='text-gray-300'>{para}</p>
         <div className='flex space-x-4 mt-4'>
           <Button>Order Now</Button>
           <Button type='secondary'>Contact Us</Button>
         </div>
       </div>
       <div>
-        <img src='/images/servers-tiny.png' alt='servers' width={600} />
+        <img src={imgSrc} alt={`${heading} image`} width={600} />
       </div>
     </div>
   );
