@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
+import { HeroSection } from '../collections';
 import { Button, Navbar } from '../components';
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <div className='container mx-auto'></div>
+      <div className='container mx-auto'>
+        <HeroSection/>
+      </div>
     </div>
   );
 }
