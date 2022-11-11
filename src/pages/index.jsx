@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
+import { Button } from '../components';
 
 export default function Home() {
   return (
@@ -9,8 +11,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='container mx-auto'>
-        <p className='text-2xl'>Hi there</p>
-        <img src='/images/servers-tiny.png' alt='' width={600} />
+        <Button />
       </div>
     </div>
   );
