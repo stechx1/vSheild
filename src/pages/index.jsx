@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
-import { HeroSection } from '../collections';
+import { HeroSection, SocialBanner } from '../collections';
 import { Button, Footer, Navbar } from '../components';
 
 export default function Home() {
@@ -11,7 +11,6 @@ export default function Home() {
         <meta name='description' content='The Safest way to surf the web' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
       <div className='container mx-auto'>
         <HeroSection
           header={'fully dedicated resources'}
@@ -21,8 +20,10 @@ export default function Home() {
           }
           imgSrc='/images/servers-tiny.png'
         />
+        <section className='my-[80px]'>
+          <SocialBanner />
+        </section>
       </div>
-      <Footer />
     </div>
   );
 }
