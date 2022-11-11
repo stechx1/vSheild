@@ -10,6 +10,7 @@ export default function Home() {
       </Head>
       <div className='container mx-auto'>
         <p className='text-2xl'>Hi there</p>
+        <img src='/images/servers-tiny.png' alt='' width={600} />
       </div>
     </div>
   );
