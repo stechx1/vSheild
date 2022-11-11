@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import { HeroSection } from '../collections';
-import { Button, Navbar } from '../components';
+import { Button, Footer, Navbar } from '../components';
 
 export default function Home() {
   return (
@@ -18,9 +18,11 @@ export default function Home() {
           heading='Virtual Dedicated Servers'
           para={
             'Servers with fully dedicated resources, KVM virtualization and insane network speeds starting at $11.99/month'
-          } imgSrc="/images/servers-tiny.png"
+          }
+          imgSrc='/images/servers-tiny.png'
         />
       </div>
+      <Footer />
     </div>
   );
 }
