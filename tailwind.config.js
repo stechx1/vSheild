@@ -11,7 +11,11 @@ module.exports = {
         "background": "#141416",
         "primary": "#3772FF",
         "success": "#27AE60"
-      }
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        mont: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],
