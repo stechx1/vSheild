@@ -14,7 +14,7 @@ export const Button = ({ onClick, children, type, size }) => {
     return (
       <button
         onClick={onClick}
-        className='bg-primary ${size === "small"? "py-2 px-[20px] text-sm":"py-3"} px-8 rounded-full hover:bg-blue-700'
+        className={`bg-primary ${size === "small"? "py-2 px-[20px] text-sm":"py-3"} px-8 rounded-full hover:bg-blue-700`}
       >
         {children}
       </button>

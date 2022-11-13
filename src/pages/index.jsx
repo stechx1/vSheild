@@ -7,6 +7,8 @@ import {
   OurProducts,
   LocationSection,
   OtherBenefits,
+  Testimonials,
+  ContactSection,
 } from '../collections';
 import { Button, Footer, Navbar } from '../components';
 
@@ -35,16 +37,24 @@ export default function Home() {
           <BenefitsSection />
         </section>
 
-        <section className='my-[120px]'>
+        <section className='my-[80px]'>
           <OurProducts />
         </section>
 
-        <section className='my-[120px]'>
+        <section className='my-[80px]'>
           <LocationSection />
         </section>
 
         <section>
           <OtherBenefits />
+        </section>
+
+        <section>
+          <Testimonials className="my-[80px]" />
+        </section>
+
+        <section className='my-[80px]'>
+          <ContactSection />
         </section>
       </div>
     </div>
