@@ -3,3 +3,4 @@ export * from './SocialBanner';
 export * from './BenefitsSection';
 export * from './OurProducts';
 export * from './LocationSection';
+export * from './OtherBenefits';
