@@ -4,8 +4,10 @@ import { Transition } from '@headlessui/react';
 import { Button } from '../Button';
 import { MobileNavButton } from './MobileNavButton/MobileNavButton';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export const Navbar = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className='py-8'>
@@ -61,7 +63,11 @@ export const Navbar = () => {
             </div>
             <MobileNavButton isOpen={isOpen} setIsOpen={setIsOpen} />
             <div className='hidden md:block'>
-              <Button type='secondary' size={'small'}>
+              <Button
+                onClick={() => router.push('https://cp.vshield.pro/login')}
+                type='secondary'
+                size={'small'}
+              >
                 Customer Panel
               </Button>
             </div>
@@ -123,7 +129,11 @@ export const Navbar = () => {
                 FAQs
               </a>
 
-              <Button type='secondary' size={'small'}>
+              <Button
+                onClick={() => router.push('https://cp.vshield.pro/login')}
+                type='secondary'
+                size={'small'}
+              >
                 Customer Panel
               </Button>
             </div>

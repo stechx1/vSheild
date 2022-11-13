@@ -37,7 +37,7 @@ export default function Home() {
           <BenefitsSection />
         </section>
 
-        <section className='my-[80px]'>
+        <section className='my-[80px] lg:px-32'>
           <OurProducts />
         </section>
 
