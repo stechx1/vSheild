@@ -1,6 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
-import { HeroSection, SocialBanner, BenefitsSection, OurProducts } from '../collections';
+import {
+  HeroSection,
+  SocialBanner,
+  BenefitsSection,
+  OurProducts,
+  LocationSection,
+} from '../collections';
 import { Button, Footer, Navbar } from '../components';
 
 export default function Home() {
@@ -29,7 +35,11 @@ export default function Home() {
         </section>
 
         <section className='my-[120px]'>
-          <OurProducts/>
+          <OurProducts />
+        </section>
+
+        <section className='my-[120px]'>
+          <LocationSection />
         </section>
       </div>
     </div>
