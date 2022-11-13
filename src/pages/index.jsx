@@ -49,8 +49,8 @@ export default function Home() {
           <OtherBenefits />
         </section>
 
-        <section>
-          <Testimonials className="my-[80px]" />
+        <section className="my-[80px]">
+          <Testimonials />
         </section>
 
         <section className='my-[80px]'>
