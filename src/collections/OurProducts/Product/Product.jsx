@@ -8,7 +8,7 @@ export const Product = ({ reverse, heading, para, list, imgSrc }) => {
         reverse ? 'flex-row-reverse' : 'flex-row'
       } justify-between items-center mb-14`}
     >
-      <div className='space-y-4 '>
+      <div className='space-y-4'>
         <h3 className='text-4xl'>{heading}</h3>
         <p className='max-w-[380px] text-gray-300'>{para}</p>
         <ul className='space-y-2'>
@@ -21,7 +21,7 @@ export const Product = ({ reverse, heading, para, list, imgSrc }) => {
         </ul>
         <Button>See Details</Button>
       </div>
-      <img src={imgSrc} alt='server' />
+      <img src={imgSrc} alt='server' className={`max-w-[350px] ld:max-w-[800px] `} />
     </div>
   );
 };
