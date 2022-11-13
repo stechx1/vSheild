@@ -1,11 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import { Button } from '../../components';
 
 const Support = () => {
   return (
+    <>
+    <Head>
+      <title>Support</title>
+    </Head>
     <div className='container mx-auto flex flex-col justify-center items-center'>
       <h1 className='text-6xl'>Support</h1>
-      <div className='my-[80px] grid grid-cols-4 gap-12 md:grid-cols-3 lg:grid-cols-4'>
+      <div className='my-[80px] grid grid-cols-2 gap-12 md:grid-cols-3 lg:grid-cols-4'>
         {/* Discord */}
         <div className='flex flex-col space-y-2 justify-center items-center'>
           <img src='/icons/discord.png' alt='discord' width={200} />
@@ -51,6 +56,7 @@ const Support = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

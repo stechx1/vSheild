@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router';
 import { Button } from '../../components';
 
 export const ContactSection = () => {
+  const router = useRouter();
   return (
     <>
       <hr className='my-6 sm:mx-auto border-gray-700 lg:my-8' />
@@ -11,7 +13,7 @@ export const ContactSection = () => {
           Need something more powerful? We can help you! Our experts can provide
           you exactly what you need at the best price, this is our promise.
         </p>
-        <Button>Contact Us</Button>
+        <Button onClick={() => router.push('/support')}>Contact Us</Button>
       </div>
     </>
   );

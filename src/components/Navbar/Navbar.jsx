@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { Button } from '../Button';
 import { MobileNavButton } from './MobileNavButton/MobileNavButton';
+import Link from 'next/link';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,18 +12,19 @@ export const Navbar = () => {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='h-16'>
           <div className='flex items-center justify-between'>
-            <div className='flex-shrink-0'>
-              <img src='/icons/vSheild-logo.png' alt='Workflow' />
-            </div>
+            <Link href={'/'}>
+              <div className='flex-shrink-0'>
+                <img src='/icons/vSheild-logo.png' alt='vsheild' />
+              </div>
+            </Link>
             <div className='flex justify-between'>
               <div className='hidden md:block'>
                 <div className='flex items-baseline space-x-4'>
-                  <a
-                    href='#'
-                    className=' hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    Home
-                  </a>
+                  <Link href='/'>
+                    <p className=' hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium'>
+                      Home
+                    </p>
+                  </Link>
 
                   <a
                     href='#'
@@ -31,33 +33,29 @@ export const Navbar = () => {
                     Products
                   </a>
 
-                  <a
-                    href='#'
-                    className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    Support
-                  </a>
+                  <Link href={'/support'}>
+                    <p className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+                      Support
+                    </p>
+                  </Link>
 
-                  <a
-                    href='#'
-                    className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    API
-                  </a>
+                  <Link href={'https://api.vshield.pro/documentation/'}>
+                    <p className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+                      API
+                    </p>
+                  </Link>
 
-                  <a
-                    href='#'
-                    className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    Status
-                  </a>
+                  <Link href={'https://status.vshield.pro/en/'}>
+                    <p className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+                      Status
+                    </p>
+                  </Link>
 
-                  <a
-                    href='#'
-                    className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    FAQs
-                  </a>
+                  <Link href={'https://help.vshield.pro/en/'}>
+                    <p className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+                      FAQs
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>

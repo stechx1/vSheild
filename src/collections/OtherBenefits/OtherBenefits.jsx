@@ -1,7 +1,9 @@
+import { useRouter } from 'next/router';
 import { Button } from '../../components';
 
 /* eslint-disable @next/next/no-img-element */
 export const OtherBenefits = () => {
+  const router = useRouter();
   return (
     <div className='flex items-center justify-between'>
       <div className='flex flex-col space-y-4'>
@@ -34,7 +36,7 @@ export const OtherBenefits = () => {
         </ul>
         <div className='flex space-x-3 mt-2'>
           <Button size={'small'}>Choose Plan</Button>
-          <Button size={'small'} type='secondary'>
+          <Button onClick={() => router.push("/support")} size={'small'} type='secondary'>
             Contact Us
           </Button>
         </div>
