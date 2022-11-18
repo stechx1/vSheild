@@ -26,7 +26,7 @@ const Support = () => {
         {/* Live Chat */}
         <div className='flex flex-col space-y-2 justify-center items-center'>
           <img src='/icons/live-chat.svg' alt='discord' width={200} />
-          <h2 className='text-2xl font-bold'>Discord</h2>
+          <h2 className='text-2xl font-bold'>Live Chat</h2>
           <p className='text-center'>
             Join our official Discord Server to keep up to date with vShield and
             extra support.
@@ -37,7 +37,7 @@ const Support = () => {
 
         <div className='flex flex-col space-y-2 justify-center items-center'>
           <img src='/icons/file.svg' alt='discord' width={200} />
-          <h2 className='text-2xl font-bold'>Discord</h2>
+          <h2 className='text-2xl font-bold'>Knowledgebase</h2>
           <p className='text-center'>
             Join our official Discord Server to keep up to date with vShield and
             extra support.
@@ -47,7 +47,7 @@ const Support = () => {
 
         <div className='flex flex-col space-y-2 justify-center items-center'>
           <img src='/icons/ticket.svg' alt='discord' width={200} />
-          <h2 className='text-2xl font-bold'>Discord</h2>
+          <h2 className='text-2xl font-bold'>Submit Ticket</h2>
           <p className='text-center'>
             Join our official Discord Server to keep up to date with vShield and
             extra support.
