@@ -24,7 +24,7 @@ export const HeroSection = ({ header, heading, para, imgSrc }) => {
         </div>
       </div>
       <div>
-        <img src={imgSrc} alt={`${heading} image`} width={600} />
+        <img src={imgSrc} alt={`${heading} image`} width={500} />
       </div>
     </div>
   );

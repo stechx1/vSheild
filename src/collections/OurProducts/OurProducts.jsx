@@ -55,7 +55,7 @@ export const OurProducts = () => {
   return (
     <div>
       <div className='flex flex-col items-center '>
-        <h2 className='text-3xl mb-14'>Our Products</h2>
+        <h2 className='text-4xl font-bold mb-8'>Our Products</h2>
       </div>
       <Product
         heading='Virtual Dedicated Servers'
