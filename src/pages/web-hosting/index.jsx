@@ -9,6 +9,26 @@ import {
 } from '../../collections';
 
 const WebHostingPage = () => {
+  const webHostingBenefits = [
+    {
+      id: 1,
+      icon: '/icons/high-performance-icon.svg',
+      header: 'Incredibly Fast',
+      para: 'Our WebHosting range uses exclusively high-end Ryzen nodes with NVME disks. vShield nodes are optimized & tweaked to offer the best possible performance.',
+    },
+    {
+      id: 2,
+      icon: '/icons/cloud-icon.svg',
+      header: 'Unlimited Bandwidth',
+      para: 'We offer a 99.9% uptime guarantee on all our services. Say goodbye to slow loading times and outages',
+    },
+    {
+      id: 3,
+      icon: '/icons/sheild-icon.svg',
+      header: 'HQ Anti-DDos',
+      para: "With vShield's anti-ddos, attacks will become a problem of the past. Our advanced system will be able to catch & block attacks in real-time.",
+    },
+  ];
   return (
     <div className='container mx-auto'>
       <Head>
@@ -26,7 +46,7 @@ const WebHostingPage = () => {
       </section>
 
       <section className='my-[80px]'>
-        <BenefitsSection />
+        <BenefitsSection benefitsList={webHostingBenefits} />
       </section>
 
       <section className='my-[80px]'>

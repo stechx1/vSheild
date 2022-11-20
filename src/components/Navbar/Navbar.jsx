@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 export const Navbar = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [openDropDown, setOpenDropDown] = useState(false);
   return (
     <nav className='py-8'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -28,12 +29,20 @@ export const Navbar = () => {
                     </p>
                   </Link>
 
-                  <a
-                    href='#'
-                    className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    Products
-                  </a>
+                  <div className='relative'>
+                    <a
+                      onClick={() => setOpenDropDown((prev) => !prev)}
+                      className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                    >
+                      Products
+                    </a>
+
+                    <ul className='ml-2 mt-2 space-y-2 py-3 absolute bg-[#333] px-2 rounded w-full'>
+                      <li className='text-sm cursor-pointer'> Virtual Dedicated Servers </li>
+                      <li className='text-sm cursor-pointer'> Product 2 </li>
+                      <li className='text-sm cursor-pointer'> Product 3 </li>
+                    </ul>
+                  </div>
 
                   <Link href={'/support'}>
                     <p className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
