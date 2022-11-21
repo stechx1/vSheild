@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 /* eslint-disable @next/next/no-img-element */
 export const Footer = () => {
   return (
@@ -25,19 +27,19 @@ export const Footer = () => {
               </h2>
               <ul className='text-gray-400'>
                 <li className='mb-4'>
-                  <a href='https://flowbite.com/' className='hover:underline'>
-                    VDS Hosting
-                  </a>
+                  <Link href='/virtual-dedicated-servers'>
+                    <p className='hover:underline'>VDS Hosting</p>
+                  </Link>
                 </li>
                 <li className='mb-4'>
-                  <a href='https://tailwindcss.com/' className='hover:underline'>
-                    Web Hosting
-                  </a>
+                  <Link href={'/web-hosting'}>
+                    <p className='hover:underline'>Web Hosting</p>
+                  </Link>
                 </li>
                 <li>
-                  <a href='https://tailwindcss.com/' className='hover:underline'>
-                    Dedicated Servers
-                  </a>
+                  <Link href={'/dedicated-servers'}>
+                    <p className='hover:underline'>Dedicated Servers</p>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -47,13 +49,19 @@ export const Footer = () => {
               </h2>
               <ul className='text-gray-400'>
                 <li className='mb-4'>
-                  <a className='hover:underline '>Control Panel</a>
+                  <Link href={'https://cp.vshield.pro/login'}>
+                    <p className='hover:underline '>Control Panel</p>
+                  </Link>
                 </li>
                 <li className='mb-4'>
-                  <a className='hover:underline'>Status</a>
+                  <Link href={'https://status.vshield.pro/en/'}>
+                    <p className='hover:underline'>Status</p>
+                  </Link>
                 </li>
                 <li>
-                  <a className='hover:underline'>Terms of Services</a>
+                  <Link href={'/terms-of-service'}>
+                    <p className='hover:underline'>Terms of Services</p>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -63,12 +71,12 @@ export const Footer = () => {
               </h2>
               <ul className='text-gray-400'>
                 <li className='mb-4'>
-                  <a href='#' className='hover:underline'>
-                    Support
-                  </a>
+                  <Link href={'/support'}>
+                    <p className='hover:underline'>Support</p>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#' className='hover:underline'>
+                  <a href=' https://help.vshield.pro/en/' className='hover:underline'>
                     FAQ
                   </a>
                 </li>
@@ -80,9 +88,9 @@ export const Footer = () => {
         <div className='sm:flex sm:items-center sm:justify-between container mx-auto'>
           <span className='text-sm sm:text-center text-gray-400'>
             © 2022{' '}
-            <a href='https://flowbite.com/' className='hover:underline'>
+            <Link href='/' className='hover:underline'>
               VSheild
-            </a>
+            </Link>
             . All Rights Reserved.
           </span>
           <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0'>

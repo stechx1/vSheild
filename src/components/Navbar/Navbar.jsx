@@ -30,12 +30,6 @@ export const Navbar = () => {
                     </p>
                   </Link>
 
-                  {/* <a
-                    onClick={() => setOpenDropDown((prev) => !prev)}
-                    className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    Products
-                  </a> */}
 
                   <Dropdown color='white' />
 
@@ -91,47 +85,47 @@ export const Navbar = () => {
         {(ref) => (
           <div className='md:hidden' id='mobile-menu'>
             <div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-              <a
-                href='#'
+              <Link
+                href='/'
                 className='hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 Home
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href='#'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 Products
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href='#'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 Support
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href='#'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 API
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href='#'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 Status
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href='#'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 FAQs
-              </a>
+              </Link>
 
               <Button
                 onClick={() => router.push('https://cp.vshield.pro/login')}

@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+
 export const IndigoPricingTable = ({
   plan,
   para,
@@ -9,8 +11,9 @@ export const IndigoPricingTable = ({
   price,
   list,
   belowPara,
-  uptimePara
+  uptimePara,
 }) => {
+  const router = useRouter();
   return (
     <div className='relative col-span-full md:col-span-4 bg-[#23262F] shadow-md rounded-sm border border-gray-200'>
       <div
@@ -38,7 +41,10 @@ export const IndigoPricingTable = ({
           <span className='text-gray-300 font-medium text-sm'>/mo</span>
         </div>
 
-        <button className='font-medium text-sm inline-flex items-center justify-center px-3 py-2 border border-gray-200 rounded leading-5 shadow-sm transition duration-150 ease-in-out focus:outline-none focus-visible:ring-2 hover:border-gray-300 hover:bg-white hover:text-black text-gray-200 w-full'>
+        <button
+          onClick={() => router.push('https://cp.vshield.pro/register')}
+          className='font-medium text-sm inline-flex items-center justify-center px-3 py-2 border border-gray-200 rounded leading-5 shadow-sm transition duration-150 ease-in-out focus:outline-none focus-visible:ring-2 hover:border-gray-300 hover:bg-white hover:text-black text-gray-200 w-full'
+        >
           Order Now
         </button>
       </div>
@@ -125,7 +131,7 @@ export const IndigoPricingTable = ({
                 </li>
               ))}
             </ul>
-            <p className="text-sm my-2">{belowPara}</p>
+            <p className='text-sm my-2'>{belowPara}</p>
             <p className='my-4 text-sm text-gray-400'>{uptimePara}</p>
           </>
         )}
