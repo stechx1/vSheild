@@ -7,7 +7,9 @@ export const IndigoPricingTable = ({
   bandwidth,
   location,
   price,
-  list
+  list,
+  belowPara,
+  uptimePara
 }) => {
   return (
     <div className='relative col-span-full md:col-span-4 bg-[#23262F] shadow-md rounded-sm border border-gray-200'>
@@ -123,6 +125,8 @@ export const IndigoPricingTable = ({
                 </li>
               ))}
             </ul>
+            <p className="text-sm my-2">{belowPara}</p>
+            <p className='my-4 text-sm text-gray-400'>{uptimePara}</p>
           </>
         )}
       </div>

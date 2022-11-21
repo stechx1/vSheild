@@ -7,7 +7,9 @@ export const BluePricingTable = ({
   bandwidth,
   location,
   price,
-  list
+  list,
+  belowPara,
+  uptimePara,
 }) => {
   return (
     <div className='relative col-span-full md:col-span-4 bg-[#23262F] shadow-md rounded-sm border border-gray-200'>
@@ -123,6 +125,8 @@ export const BluePricingTable = ({
                 </li>
               ))}
             </ul>
+            <p className='text-sm my-2'>{belowPara}</p>
+            <p className='text-gray-400 my-4 text-sm'>{uptimePara}</p>
           </>
         )}
       </div>

@@ -103,6 +103,9 @@ export const WebPricing = () => {
             ssd='40 GB'
             bandwidth='750Mbps (Unmetered)'
             list={firewallList}
+            belowPara='Custom UAM available for an additional $4.99/month'
+            uptimePara='99.9% Uptime Guarantee
+            Custom Layer 7 Protection'
           />
 
           <BluePricingTable
@@ -115,6 +118,9 @@ export const WebPricing = () => {
             ssd='80 GB'
             bandwidth='750Mbps (Unmetered)'
             list={websiteList}
+            uptimePara='99.9% Uptime Guarantee
+            Layer 4 Protection
+            Powered by cPanel®'
           />
           <IndigoPricingTable
             plan='Premium Package'
@@ -126,6 +132,11 @@ export const WebPricing = () => {
             ssd='120 GB'
             bandwidth='750Mbps (Unmetered)'
             list={premiumList}
+            belowPara='Custom UAM available for an additional $4.99/month'
+            uptimePara='99.9% uptime Guarantee
+            Layer 4 Protection
+            Custom Layer 7 Protection
+            Powered by cPanel®'
           />
         </div>
       </div>

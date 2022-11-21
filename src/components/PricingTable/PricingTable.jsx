@@ -8,6 +8,8 @@ export const PricingTable = ({
   location,
   price,
   list,
+  belowPara,
+  uptimePara,
 }) => {
   return (
     <div className='relative col-span-full md:col-span-4 bg-[#23262F] shadow-md rounded-sm border border-gray-200'>
@@ -40,91 +42,94 @@ export const PricingTable = ({
           Order Now
         </button>
       </div>
-      <div className='px-5 pt-4 pb-5'>
-        <div className='text-xs text-gray-300 font-semibold uppercase mb-4'>
-          What&apos;s included
-        </div>
-
-        {!list ? (
-          <ul>
-            <li className='flex items-center py-1'>
-              <svg
-                className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
-                viewBox='0 0 12 12'
-              >
-                <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
-              </svg>
-              <div>
-                <p className='font-bold'>CPU (vCores)</p>
-                <p className='text-sm'>{cpu}</p>
-              </div>
-            </li>
-            <li className='flex items-center py-1'>
-              <svg
-                className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
-                viewBox='0 0 12 12'
-              >
-                <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
-              </svg>
-              <div>
-                <p className='font-bold'>Location</p>
-                <p className='text-sm'>{location}</p>
-              </div>
-            </li>
-            <li className='flex items-center py-1'>
-              <svg
-                className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
-                viewBox='0 0 12 12'
-              >
-                <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
-              </svg>
-              <div>
-                <p className='font-bold'>RAM DDR4</p>
-                <p className='text-sm'>{ram}</p>
-              </div>
-            </li>
-            <li className='flex items-center py-1'>
-              <svg
-                className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
-                viewBox='0 0 12 12'
-              >
-                <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
-              </svg>
-              <div>
-                <p className='font-bold'>SSD NVMe Storage</p>
-                <p className='text-sm'>{ssd}</p>
-              </div>
-            </li>
-            <li className='flex items-center py-1'>
-              <svg
-                className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
-                viewBox='0 0 12 12'
-              >
-                <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
-              </svg>
-              <div>
-                <p className='font-bold'>Bandwidth</p>
-                <p className='text-sm'>{bandwidth}</p>
-              </div>
-            </li>
-          </ul>
-        ) : (
-          <>
+      <div className='px-5 pt-4 pb-5 flex flex-col justify-between'>
+        <div>
+          <div className='text-xs text-gray-300 font-semibold uppercase mb-4'>
+            What&apos;s included
+          </div>
+          {!list ? (
             <ul>
-              {list.map((listItem) => (
-                <li key={listItem.id} className='flex items-center py-1'>
-                  <svg
-                    className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
-                    viewBox='0 0 12 12'
-                  >
-                    <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
-                  </svg>
-                  <div className='text-sm'>{listItem.feature}</div>
-                </li>
-              ))}
+              <li className='flex items-center py-1'>
+                <svg
+                  className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
+                  viewBox='0 0 12 12'
+                >
+                  <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
+                </svg>
+                <div>
+                  <p className='font-bold'>CPU (vCores)</p>
+                  <p className='text-sm'>{cpu}</p>
+                </div>
+              </li>
+              <li className='flex items-center py-1'>
+                <svg
+                  className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
+                  viewBox='0 0 12 12'
+                >
+                  <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
+                </svg>
+                <div>
+                  <p className='font-bold'>Location</p>
+                  <p className='text-sm'>{location}</p>
+                </div>
+              </li>
+              <li className='flex items-center py-1'>
+                <svg
+                  className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
+                  viewBox='0 0 12 12'
+                >
+                  <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
+                </svg>
+                <div>
+                  <p className='font-bold'>RAM DDR4</p>
+                  <p className='text-sm'>{ram}</p>
+                </div>
+              </li>
+              <li className='flex items-center py-1'>
+                <svg
+                  className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
+                  viewBox='0 0 12 12'
+                >
+                  <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
+                </svg>
+                <div>
+                  <p className='font-bold'>SSD NVMe Storage</p>
+                  <p className='text-sm'>{ssd}</p>
+                </div>
+              </li>
+              <li className='flex items-center py-1'>
+                <svg
+                  className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
+                  viewBox='0 0 12 12'
+                >
+                  <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
+                </svg>
+                <div>
+                  <p className='font-bold'>Bandwidth</p>
+                  <p className='text-sm'>{bandwidth}</p>
+                </div>
+              </li>
             </ul>
-          </>
-        )}
+          ) : (
+            <>
+              <ul>
+                {list.map((listItem) => (
+                  <li key={listItem.id} className='flex items-center py-1'>
+                    <svg
+                      className='w-3 h-3 flex-shrink-0 fill-current text-green-500 mr-2'
+                      viewBox='0 0 12 12'
+                    >
+                      <path d='M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z' />
+                    </svg>
+                    <div className='text-sm'>{listItem.feature}</div>
+                  </li>
+                ))}
+              </ul>
+              <p className='text-sm my-2'>{belowPara}</p>
+            </>
+          )}
+        </div>
+        <p className='text-sm text-gray-400'>{uptimePara}</p>
       </div>
     </div>
   );
