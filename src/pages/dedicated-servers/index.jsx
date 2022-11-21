@@ -7,6 +7,7 @@ import {
   OtherBenefits,
   Testimonials,
 } from '../../collections';
+import { VirtualPricing } from '../../collections/Pricing/VirtualPricing';
 
 const DedicatedServersPage = () => {
   const dedicatedBenefits = [
@@ -94,6 +95,10 @@ const DedicatedServersPage = () => {
           delSubHeading
           benefitsList={vdsBenefits}
         />
+      </section>
+
+      <section className='my-[80px]'>
+        <VirtualPricing />
       </section>
 
       <section className='my-[80px]'>
