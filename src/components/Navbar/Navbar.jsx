@@ -5,6 +5,7 @@ import { Button } from '../Button';
 import { MobileNavButton } from './MobileNavButton/MobileNavButton';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Dropdown } from '../Dropdown';
 
 export const Navbar = () => {
   const router = useRouter();
@@ -29,20 +30,14 @@ export const Navbar = () => {
                     </p>
                   </Link>
 
-                  <div className='relative'>
-                    <a
-                      onClick={() => setOpenDropDown((prev) => !prev)}
-                      className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                    >
-                      Products
-                    </a>
+                  {/* <a
+                    onClick={() => setOpenDropDown((prev) => !prev)}
+                    className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                  >
+                    Products
+                  </a> */}
 
-                    <ul className='ml-2 mt-2 space-y-2 py-3 absolute bg-[#333] px-2 rounded w-full'>
-                      <li className='text-sm cursor-pointer'> Virtual Dedicated Servers </li>
-                      <li className='text-sm cursor-pointer'> Product 2 </li>
-                      <li className='text-sm cursor-pointer'> Product 3 </li>
-                    </ul>
-                  </div>
+                  <Dropdown color='white' />
 
                   <Link href={'/support'}>
                     <p className='text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
