@@ -89,6 +89,10 @@ const DedicatedServersPage = () => {
         <BenefitsSection benefitsList={dedicatedBenefits} />
       </section>
 
+      <section className='my-[80px]'>
+        <VirtualPricing />
+      </section>
+
       <section>
         <BenefitsSection
           heading={'Other Benefits You ll get'}
@@ -96,11 +100,6 @@ const DedicatedServersPage = () => {
           benefitsList={vdsBenefits}
         />
       </section>
-
-      <section className='my-[80px]'>
-        <VirtualPricing />
-      </section>
-
       <section className='my-[80px]'>
         <OtherBenefits />
       </section>
