@@ -7,6 +7,7 @@ import {
   OtherBenefits,
   Testimonials,
 } from '../../collections';
+import { WebPricing } from '../../collections/Pricing';
 
 const WebHostingPage = () => {
   const webHostingBenefits = [
@@ -47,6 +48,10 @@ const WebHostingPage = () => {
 
       <section className='my-[80px]'>
         <BenefitsSection benefitsList={webHostingBenefits} />
+      </section>
+
+      <section className='my-[80px]'>
+        <WebPricing />
       </section>
 
       <section className='my-[80px]'>

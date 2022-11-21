@@ -4,7 +4,87 @@ import {
   PricingTable,
 } from '../../components/PricingTable';
 
-export const VDSPricing = () => {
+export const WebPricing = () => {
+  const firewallList = [
+    {
+      id: 1,
+      feature: '1 Domain',
+    },
+    {
+      id: 2,
+      feature: 'Unmetered Bandwidth',
+    },
+    {
+      id: 3,
+      feature: 'Unlimited Requests',
+    },
+    {
+      id: 4,
+      feature: '10Gbps Network Speed',
+    },
+  ];
+
+  const websiteList = [
+    {
+      id: 1,
+      feature: '1 Domain',
+    },
+    {
+      id: 2,
+      feature: '1 GB SSD Storage',
+    },
+    {
+      id: 3,
+      feature: 'Unmetered Bandwidth',
+    },
+    {
+      id: 4,
+      feature: '10Gbps Network Speed',
+    },
+    {
+      id: 5,
+      feature: 'Unlimited Databases',
+    },
+    {
+      id: 6,
+      feature: 'Unlimited FTP users',
+    },
+    {
+      id: 7,
+      feature: 'Unlimited Sub-Domains',
+    },
+  ];
+
+  const premiumList = [
+    {
+      id: 1,
+      feature: '1 Domain',
+    },
+    {
+      id: 2,
+      feature: '25 GB SSD Storage',
+    },
+    {
+      id: 3,
+      feature: 'Unmetered Bandwidth',
+    },
+    {
+      id: 4,
+      feature: '10Gbps Network Speed',
+    },
+    {
+      id: 5,
+      feature: 'Unlimited Databases',
+    },
+    {
+      id: 6,
+      feature: 'Unlimited FTP users',
+    },
+    {
+      id: 7,
+      feature: 'Unlimited Sub-Domains',
+    },
+  ];
   return (
     <div className='h-full'>
       <div className='max-w-5xl mx-auto' x-data='{ annual: true }'>
@@ -22,46 +102,30 @@ export const VDSPricing = () => {
             ram='4 GB'
             ssd='40 GB'
             bandwidth='750Mbps (Unmetered)'
-            color='yellow'
+            list={firewallList}
           />
 
           <BluePricingTable
-            plan='Silver'
-            price='24.99'
+            plan='Website Only'
+            para='Perfect for small Website'
+            price='9.99'
             location='Europe | Canada'
             cpu='4x AMD® Ryzen 9 3900'
             ram='8 GB'
             ssd='80 GB'
             bandwidth='750Mbps (Unmetered)'
+            list={websiteList}
           />
           <IndigoPricingTable
-            plan='Gold'
-            price='35.99'
+            plan='Premium Package'
+            para='Complete Web Hosting + Firewall'
+            price='14.99'
             location='Europe | Canada'
             cpu='6x AMD® Ryzen 9 3900'
             ram='12 GB'
             ssd='120 GB'
             bandwidth='750Mbps (Unmetered)'
-          />
-
-          <BluePricingTable
-            plan='Diamond'
-            price='46.99'
-            location='Europe | Canada'
-            cpu='8x AMD® Ryzen 9 3900'
-            ram='16 GB'
-            ssd='160 GB'
-            bandwidth='750Mbps (Unmetered)'
-          />
-
-          <PricingTable
-            plan='Enterprise'
-            price='57.99'
-            location='Europe | Canada'
-            cpu='10x AMD® Ryzen 9 3900'
-            ram='20 GB'
-            ssd='200 GB'
-            bandwidth='750Mbps (Unmetered)'
+            list={premiumList}
           />
         </div>
       </div>
