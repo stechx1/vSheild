@@ -7,6 +7,7 @@ import {
   OtherBenefits,
   Testimonials,
 } from '../../collections';
+import { VDSPricing } from '../../collections/Pricing';
 
 const VDSPage = () => {
   const vdsBenefits = [
@@ -61,6 +62,10 @@ const VDSPage = () => {
           }
           imgSrc='/images/servers-tiny.png'
         />
+      </section>
+
+      <section>
+        <VDSPricing />
       </section>
 
       <section className='my-[80px]'>
