@@ -4,7 +4,7 @@ export const Testimonials = () => {
   return (
     <div className='flex flex-col justify-center items-center'>
       <h2 className='font-bold text-3xl'>We Love Our Customers</h2>
-      <div className='mt-[80px] grid grid-cols-3 gap-16'>
+      <div className='mt-[80px] grid grid-cols-1 md:grid-cols-3 gap-16'>
         <Review
           name='EpicSamar'
           reviewBody={

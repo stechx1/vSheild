@@ -5,7 +5,7 @@ import { Button } from '../../components';
 export const OtherBenefits = () => {
   const router = useRouter();
   return (
-    <div className='flex items-center justify-between'>
+    <div className='flex flex-col md:flex-row items-center justify-between'>
       <div className='flex flex-col space-y-4'>
         <h2 className='text-3xl'>Other benefits of using VSheild</h2>
         <p>

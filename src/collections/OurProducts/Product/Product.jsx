@@ -4,8 +4,8 @@ import { Button } from '../../../components';
 export const Product = ({ reverse, heading, para, list, imgSrc }) => {
   return (
     <div
-      className={`flex ${
-        reverse ? 'flex-row-reverse' : 'flex-row'
+      className={`flex flex-col md:flex-row ${
+        reverse ? 'flex-col md:flex-row-reverse' : 'flex-col md:flex-row'
       } justify-between items-center mb-14`}
     >
       <div className='space-y-4'>
