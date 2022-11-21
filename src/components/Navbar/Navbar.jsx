@@ -30,7 +30,6 @@ export const Navbar = () => {
                     </p>
                   </Link>
 
-
                   <Dropdown color='white' />
 
                   <Link href={'/support'}>
@@ -92,36 +91,31 @@ export const Navbar = () => {
                 Home
               </Link>
 
-              <Link
-                href='#'
-                className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-              >
-                Products
-              </Link>
+              <Dropdown color={'white'} />
 
               <Link
-                href='#'
+                href='/support'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 Support
               </Link>
 
               <Link
-                href='#'
+                href="https://api.vshield.pro/documentation/"
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 API
               </Link>
 
               <Link
-                href='#'
+                href='https://status.vshield.pro/en/'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 Status
               </Link>
 
               <Link
-                href='#'
+                href='#https://help.vshield.pro/en/'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 FAQs
