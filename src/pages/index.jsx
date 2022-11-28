@@ -70,10 +70,6 @@ export default function Home() {
         </section>
 
         <section className='my-[80px]'>
-          <Testimonials />
-        </section>
-
-        <section className='my-[80px]'>
           <ContactSection />
         </section>
       </div>

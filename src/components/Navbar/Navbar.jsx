@@ -10,7 +10,6 @@ import { Dropdown } from '../Dropdown';
 export const Navbar = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
-  const [openDropDown, setOpenDropDown] = useState(false);
   return (
     <nav className='py-8'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -101,7 +100,7 @@ export const Navbar = () => {
               </Link>
 
               <Link
-                href="https://api.vshield.pro/documentation/"
+                href='https://api.vshield.pro/documentation/'
                 className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               >
                 API
