@@ -14,19 +14,19 @@ import {
 const benefitsList = [
   {
     id: 1,
-    icon: '/icons/high-performance-icon.svg',
+    icon: '/icons/new/high-performance.svg',
     header: 'High Performance',
     para: "It's very important to us that each customers get their own dedicated resources. We think providing a non-overloaded environment is crucial.",
   },
   {
     id: 2,
-    icon: '/icons/cloud-icon.svg',
+    icon: '/icons/new/cloud.svg',
     header: 'Stable',
     para: 'We offer a 99.9% uptime guarantee on all our services. Say goodbye to slow loading times and outages',
   },
   {
     id: 3,
-    icon: '/icons/sheild-icon.svg',
+    icon: '/icons/new/sheild.svg',
     header: 'Safe & Secure',
     para: 'Here at vShield, privacy is guaranteed. Keep your environment in the safest hands, thanks to our internal security policies.',
   },
