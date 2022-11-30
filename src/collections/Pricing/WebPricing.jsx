@@ -9,6 +9,7 @@ export const WebPricing = () => {
   const plans = [
     {
       plan: "Firewall Only",
+      color: "#9757D7",
       domain: "1 Domain",
       bandwidth: "Unmetered",
       request: "Unlimited",
@@ -22,6 +23,7 @@ export const WebPricing = () => {
     },
     {
       plan: "Website Only",
+      color: "#FF592C",
       domain: "1 Domain",
       bandwidth: "Unmetered",
       request: "-",
@@ -35,6 +37,7 @@ export const WebPricing = () => {
     },
     {
       plan: "Premium Package",
+      color: "#EF466F",
       domain: "1 Domain",
       bandwidth: "Unmetered",
       request: "-",

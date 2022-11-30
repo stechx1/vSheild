@@ -9,6 +9,7 @@ export const VirtualPricing = () => {
   const plans = [
     {
       plan: "E5-2680-32	",
+      color: "#9757D7",
       cpu: "2x Intel® E5-2680 2.70GHz( 16 cores, 32 threads )",
       ram: "32 GB DDR3",
       disk: "480 GB SSD	",
@@ -18,6 +19,7 @@ export const VirtualPricing = () => {
     },
     {
       plan: "E5-2680-64",
+      color: "#FF592C",
       cpu: "2x Intel® E5-2680 2.70GHz ( 16 cores, 32 threads )",
       ram: "64 GB DDR3",
       disk: "480 GB SSD	",

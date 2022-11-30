@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import { Button } from '../Button';
 
 export const Web_Hosting_Table = ({ plans }) => {
   const router = useRouter();
@@ -14,9 +15,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               {plans?.map((item, index) => (
                 <td key={index} className='py-3 px-6 text-center'>
                   <div
-                    className={`font-semibold ${
-                      index % 2 == 0 ? 'text-rose-600' : 'text-purple-700'
-                    }`}
+                    style={{ color: item?.color }}
+                    className={`font-semibold`}
                   >
                     {item?.plan}
                   </div>
@@ -44,7 +44,7 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope='row' className='py-3 px-6 text-white'>
                 Requests
               </th>
-              {plans?.map((item) => (
+              {plans?.map((item, index) => (
                 <td key={index} className='py-3 px-6 text-white text-center'>
                   {item?.request}
                 </td>
@@ -134,14 +134,14 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope='row' className='py-3 px-6'></th>
               {plans?.map((item, index) => (
                 <td key={index} className='py-3 px-6 text-center'>
-                  <button
+                  <Button
+                    key='secondary'
                     onClick={() =>
                       router.push('https://cp.vshield.pro/register')
                     }
-                    className='border border-white py-2 px-4 rounded-3xl hover:border-0 hover:bg-cyan-500 text-white'
                   >
                     Order Now
-                  </button>
+                  </Button>
                 </td>
               ))}
             </tr>
