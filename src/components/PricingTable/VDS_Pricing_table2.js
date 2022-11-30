@@ -17,12 +17,11 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                       index % 2 == 0 ? "text-rose-600" : "text-purple-700"
                     }`}
                   >
-                    <sup className="mr-1">$</sup>
                     {item?.Plan}
                   </div>
                   <div className="flex flex-col my-6">
                     <span className="text-3xl font-semibold text-white">
-                      <sup className="mr-1">$</sup>
+                      <sup className="mr-1 text-lg font-thin">$</sup>
                       {item?.Price}
                     </span>
                     <span className="text-xs text-#777E91">per month</span>
