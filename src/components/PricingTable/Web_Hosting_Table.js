@@ -135,7 +135,7 @@ export const Web_Hosting_Table = ({ plans }) => {
               {plans?.map((item, index) => (
                 <td key={index} className="py-3 px-6 text-center">
                   <Button
-                    key="secondary"
+                    type="secondary"
                     onClick={() =>
                       router.push("https://cp.vshield.pro/register")
                     }
