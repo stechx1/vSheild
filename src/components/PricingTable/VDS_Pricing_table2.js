@@ -11,7 +11,7 @@ export const VDS_Pricing_table2 = ({ plans }) => {
             <tr className="relative">
               <th scope="row" className="py-3 px-6 absolute bottom-0"></th>
               {plans?.map((item, index) => (
-                <td className="py-3 px-6 text-center">
+                <td key={index} className="py-3 px-6 text-center">
                   <div
                     className={`font-semibold ${
                       index % 2 == 0 ? "text-rose-600" : "text-purple-700"
@@ -34,8 +34,8 @@ export const VDS_Pricing_table2 = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 CPU (vCores)
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.CPUvCores}
                 </td>
               ))}
@@ -44,8 +44,8 @@ export const VDS_Pricing_table2 = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 RAM DDR3
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.RAMDDR3}
                 </td>
               ))}
@@ -54,8 +54,8 @@ export const VDS_Pricing_table2 = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 SSD Storage
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.RAMDDR3}
                 </td>
               ))}
@@ -64,8 +64,8 @@ export const VDS_Pricing_table2 = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Bandwidth
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.Bandwidth}
                 </td>
               ))}
@@ -74,8 +74,8 @@ export const VDS_Pricing_table2 = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Location
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.Location}
                 </td>
               ))}
@@ -84,16 +84,16 @@ export const VDS_Pricing_table2 = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Price
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.Price}
                 </td>
               ))}
             </tr>
             <tr>
               <th scope="row" className="py-3 px-6"></th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-center">
                   <button
                     onClick={() =>
                       router.push("https://cp.vshield.pro/register")
