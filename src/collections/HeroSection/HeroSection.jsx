@@ -9,7 +9,7 @@ export const HeroSection = ({ header, heading, para, imgSrc }) => {
       <div className='max-w-[600px] space-y-8'>
         <div>
           <h3 className='uppercase font-bold text-gray-400'>{header}</h3>
-          <h1 className='text-6xl font-bold'>{heading}</h1>
+          <h1 className='text-4xl md:text-6xl font-bold'>{heading}</h1>
         </div>
         <p className='text-gray-300'>{para}</p>
         <div className='flex space-x-4 mt-4'>

@@ -6,6 +6,7 @@ export const HeroSlider = () => {
     dots: false,
     infinite: true,
     autoplay: true,
+    // arrows: false,
     autoplaySpeed: 2500,
     speed: 500,
     slidesToShow: 1,
