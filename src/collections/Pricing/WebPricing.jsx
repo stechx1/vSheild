@@ -18,7 +18,7 @@ export const WebPricing = () => {
       ftp: "-",
       subDomain: "-",
       uam: "Custom UAM available for an additional $4.99/month",
-      price: "$6.99",
+      price: "6.99",
     },
     {
       plan: "Website Only",
@@ -31,7 +31,7 @@ export const WebPricing = () => {
       ftp: "Unlimited",
       subDomain: "Unlimited",
       uam: "-",
-      price: "$9.99",
+      price: "9.99",
     },
     {
       plan: "Premium Package",
@@ -44,7 +44,7 @@ export const WebPricing = () => {
       ftp: "Unlimited",
       subDomain: "Unlimited",
       uam: "Custom UAM available for an additional $4.99/month",
-      price: "$14.99",
+      price: "14.99",
     },
   ];
 

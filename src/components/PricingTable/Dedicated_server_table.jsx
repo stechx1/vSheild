@@ -21,14 +21,15 @@ export const Dedicated_server_table = ({ plans }) => {
                   </div>
                   <div className="flex flex-col my-6">
                     <span className="text-3xl font-semibold text-white">
+                      <sup className="mr-1">$</sup>
                       {item?.price}
                     </span>
-                    <span className="text-xs">per month</span>
+                    <span className="text-xs text-#777E91">per month</span>
                   </div>
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 CPU
               </th>
@@ -38,7 +39,7 @@ export const Dedicated_server_table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 RAM
               </th>
@@ -48,7 +49,7 @@ export const Dedicated_server_table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Disk
               </th>
@@ -58,7 +59,7 @@ export const Dedicated_server_table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Bandwidth
               </th>
@@ -68,7 +69,7 @@ export const Dedicated_server_table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Location
               </th>
@@ -78,7 +79,7 @@ export const Dedicated_server_table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Price
               </th>

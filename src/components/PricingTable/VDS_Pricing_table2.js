@@ -17,18 +17,20 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                       index % 2 == 0 ? "text-rose-600" : "text-purple-700"
                     }`}
                   >
+                    <sup className="mr-1">$</sup>
                     {item?.Plan}
                   </div>
                   <div className="flex flex-col my-6">
                     <span className="text-3xl font-semibold text-white">
+                      <sup className="mr-1">$</sup>
                       {item?.Price}
                     </span>
-                    <span className="text-xs">per month</span>
+                    <span className="text-xs text-#777E91">per month</span>
                   </div>
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 CPU (vCores)
               </th>
@@ -38,7 +40,7 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 RAM DDR3
               </th>
@@ -48,7 +50,7 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 SSD Storage
               </th>
@@ -58,7 +60,7 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Bandwidth
               </th>
@@ -68,7 +70,7 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Location
               </th>
@@ -78,7 +80,7 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Price
               </th>

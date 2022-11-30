@@ -16,7 +16,7 @@ export const VDSPricing = () => {
       SSDNVMeStorage: "40 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "Europe Canada",
-      Price: "$12.99",
+      Price: "12.99",
     },
 
     {
@@ -26,7 +26,7 @@ export const VDSPricing = () => {
       SSDNVMeStorage: "80 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "Europe Canada",
-      Price: "$24.99",
+      Price: "24.99",
     },
 
     {
@@ -36,7 +36,7 @@ export const VDSPricing = () => {
       SSDNVMeStorage: "120 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "Europe Canada",
-      Price: "$35.99",
+      Price: "35.99",
     },
 
     {
@@ -46,7 +46,7 @@ export const VDSPricing = () => {
       SSDNVMeStorage: "160 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "Europe Canada",
-      Price: "$46.99",
+      Price: "46.99",
     },
 
     {
@@ -56,7 +56,7 @@ export const VDSPricing = () => {
       SSDNVMeStorage: "200 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "Europe Canada",
-      Price: "$57.99",
+      Price: "57.99",
     },
   ];
 
@@ -68,7 +68,7 @@ export const VDSPricing = () => {
       SSDStorage: "40 GB",
       Bandwidth: "500Mbps(Unmetered)",
       Location: "France Canada",
-      Price: "$13.99",
+      Price: "13.99",
     },
 
     {
@@ -78,7 +78,7 @@ export const VDSPricing = () => {
       SSDStorage: "50 GB",
       Bandwidth: "500Mbps(Unmetered)",
       Location: "France Canada",
-      Price: "$21.99",
+      Price: "21.99",
     },
 
     {
@@ -88,7 +88,7 @@ export const VDSPricing = () => {
       SSDStorage: "60 GB",
       Bandwidth: "500Mbps(Unmetered)",
       Location: "France Canada",
-      Price: "$30.99",
+      Price: "30.99",
     },
   ];
 
@@ -100,7 +100,7 @@ export const VDSPricing = () => {
       SSDStorage: "40 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "USA Canada UK",
-      Price: "$11.99",
+      Price: "11.99",
     },
 
     {
@@ -110,7 +110,7 @@ export const VDSPricing = () => {
       SSDStorage: "60 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "USA Canada UK",
-      Price: "$19.99",
+      Price: "19.99",
     },
 
     {
@@ -120,7 +120,7 @@ export const VDSPricing = () => {
       SSDStorage: "80 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "USA Canada UK",
-      Price: "$27.99",
+      Price: "27.99",
     },
 
     {
@@ -130,7 +130,7 @@ export const VDSPricing = () => {
       SSDStorage: "100 GB",
       Bandwidth: "750Mbps(Unmetered)",
       Location: "USA Canada UK",
-      Price: "$35.99",
+      Price: "35.99",
     },
   ];
 

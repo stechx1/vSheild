@@ -14,7 +14,7 @@ export const VirtualPricing = () => {
       disk: "480 GB SSD	",
       bandwidth: "1Gbps (Unmetered)",
       location: "Canada",
-      price: "$109.99",
+      price: "109.99",
     },
     {
       plan: "E5-2680-64",
@@ -23,7 +23,7 @@ export const VirtualPricing = () => {
       disk: "480 GB SSD	",
       bandwidth: "1Gbps (Unmetered)",
       location: "Canada",
-      price: "$124.99",
+      price: "124.99",
     },
   ];
   return (

@@ -22,14 +22,15 @@ export const Web_Hosting_Table = ({ plans }) => {
                   </div>
                   <div className="flex flex-col my-6">
                     <span className="text-3xl font-semibold text-white">
+                      <sup className="mr-1">$</sup>
                       {item?.price}
                     </span>
-                    <span className="text-xs">per month</span>
+                    <span className="text-xs text-#777E91">per month</span>
                   </div>
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Domain
               </th>
@@ -39,7 +40,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Requests
               </th>
@@ -49,7 +50,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Speed
               </th>
@@ -59,7 +60,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 SSD Storage
               </th>
@@ -69,7 +70,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Bandwidth
               </th>
@@ -79,7 +80,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 DB
               </th>
@@ -87,7 +88,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 <td className="py-3 px-6 text-white text-center">{item?.DB}</td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 FTP
               </th>
@@ -97,7 +98,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Sub Domains
               </th>
@@ -107,7 +108,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 UAM
               </th>
@@ -117,7 +118,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                 </td>
               ))}
             </tr>
-            <tr className="border-b border-1 border-gray-600">
+            <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 Price
               </th>
