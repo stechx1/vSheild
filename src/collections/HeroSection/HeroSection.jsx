@@ -5,11 +5,11 @@ import { Button } from '../../components';
 export const HeroSection = ({ header, heading, para, imgSrc }) => {
   const router = useRouter();
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center'>
+    <div className='flex flex-col space-y-8 md:flex-row justify-between items-center'>
       <div className='max-w-[600px] space-y-8'>
         <div>
           <h3 className='uppercase font-bold text-gray-400'>{header}</h3>
-          <h1 className='text-6xl font-bold'>{heading}</h1>
+          <h1 className='text-4xl md:text-6xl font-bold'>{heading}</h1>
         </div>
         <p className='text-gray-300'>{para}</p>
         <div className='flex space-x-4 mt-4'>
@@ -24,7 +24,11 @@ export const HeroSection = ({ header, heading, para, imgSrc }) => {
         </div>
       </div>
       <div>
-        <img src={imgSrc} alt={`${heading} image`} width={500} />
+        <img
+          src={imgSrc}
+          alt={`${heading} image`}
+          className='w-[300px] md:w-[500px]'
+        />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { Button } from "../Button";
 
 export const Web_Hosting_Table = ({ plans }) => {
   const router = useRouter();
@@ -12,11 +13,10 @@ export const Web_Hosting_Table = ({ plans }) => {
             <tr className="relative">
               <th scope="row" className="py-3 px-6 absolute bottom-0"></th>
               {plans?.map((item, index) => (
-                <td className="py-3 px-6 text-center">
+                <td key={index} className="py-3 px-6 text-center">
                   <div
-                    className={`font-semibold ${
-                      index % 2 == 0 ? "text-rose-600" : "text-purple-700"
-                    }`}
+                    style={{ color: item?.color }}
+                    className={`font-semibold`}
                   >
                     {item?.plan}
                   </div>
@@ -34,8 +34,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Domain
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.domain}
                 </td>
               ))}
@@ -44,8 +44,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Requests
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.request}
                 </td>
               ))}
@@ -54,8 +54,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Speed
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.speed}
                 </td>
               ))}
@@ -64,8 +64,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 SSD Storage
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.SSDStorage}
                 </td>
               ))}
@@ -74,8 +74,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Bandwidth
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.bandwidth}
                 </td>
               ))}
@@ -84,16 +84,18 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 DB
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">{item?.DB}</td>
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
+                  {item?.DB}
+                </td>
               ))}
             </tr>
             <tr className="border-b border-1 border-gray-800">
               <th scope="row" className="py-3 px-6 text-white">
                 FTP
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.ftp}
                 </td>
               ))}
@@ -102,8 +104,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Sub Domains
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.subDomain}
                 </td>
               ))}
@@ -112,8 +114,8 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 UAM
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.uam}
                 </td>
               ))}
@@ -122,24 +124,24 @@ export const Web_Hosting_Table = ({ plans }) => {
               <th scope="row" className="py-3 px-6 text-white">
                 Price
               </th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-white text-center">
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-white text-center">
                   {item?.price}
                 </td>
               ))}
             </tr>
             <tr>
               <th scope="row" className="py-3 px-6"></th>
-              {plans?.map((item) => (
-                <td className="py-3 px-6 text-center">
-                  <button
+              {plans?.map((item, index) => (
+                <td key={index} className="py-3 px-6 text-center">
+                  <Button
+                    key="secondary"
                     onClick={() =>
                       router.push("https://cp.vshield.pro/register")
                     }
-                    className="border border-white py-2 px-4 rounded-3xl hover:border-0 hover:bg-cyan-500 text-white"
                   >
                     Order Now
-                  </button>
+                  </Button>
                 </td>
               ))}
             </tr>

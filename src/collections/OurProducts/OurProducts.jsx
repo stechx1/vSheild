@@ -69,7 +69,7 @@ export const OurProducts = () => {
         heading='Web Hosting'
         para='The best DDoS protection & hosting for your website. Need protection for big attacks? We are here for you.'
         list={webList}
-        imgSrc='/images/cloud.svg'
+        imgSrc='/images/cloud.png'
         reverse
       />
 
