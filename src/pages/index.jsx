@@ -2,7 +2,6 @@
 import Head from 'next/head';
 import {
   HeroSection,
-  SocialBanner,
   BenefitsSection,
   OurProducts,
   LocationSection,
@@ -10,23 +9,24 @@ import {
   Testimonials,
   ContactSection,
 } from '../collections';
+import { HeroSlider } from '../collections/HeroSlider';
 
 const benefitsList = [
   {
     id: 1,
-    icon: '/icons/high-performance-icon.svg',
+    icon: '/icons/new/high-performance.svg',
     header: 'High Performance',
     para: "It's very important to us that each customers get their own dedicated resources. We think providing a non-overloaded environment is crucial.",
   },
   {
     id: 2,
-    icon: '/icons/cloud-icon.svg',
+    icon: '/icons/new/cloud.svg',
     header: 'Stable',
     para: 'We offer a 99.9% uptime guarantee on all our services. Say goodbye to slow loading times and outages',
   },
   {
     id: 3,
-    icon: '/icons/sheild-icon.svg',
+    icon: '/icons/new/sheild.svg',
     header: 'Safe & Secure',
     para: 'Here at vShield, privacy is guaranteed. Keep your environment in the safest hands, thanks to our internal security policies.',
   },
@@ -41,23 +41,17 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='container px-8 mx-auto font-mont'>
-        <HeroSection
-          header={'fully dedicated resources'}
-          heading='Virtual Dedicated Servers'
-          para={
-            'Servers with fully dedicated resources, KVM virtualization and insane network speeds starting at $11.99/month'
-          }
-          imgSrc='/images/servers-tiny.png'
-        />
-        <section className='my-[80px]'>
+        <HeroSlider />
+
+        {/* <section className='my-[80px]'>
           <SocialBanner />
-        </section>
+        </section> */}
 
         <section className='my-[80px]'>
           <BenefitsSection benefitsList={benefitsList} />
         </section>
 
-        <section className='my-[120px] lg:px-32'>
+        <section className='my-[120px] lg:px-16'>
           <OurProducts />
         </section>
 
@@ -66,6 +60,10 @@ export default function Home() {
         </section>
 
         <section>
+          <Testimonials />
+        </section>
+
+        <section className='my-[80px]'>
           <OtherBenefits />
         </section>
 

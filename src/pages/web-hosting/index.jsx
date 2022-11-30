@@ -13,19 +13,19 @@ const WebHostingPage = () => {
   const webHostingBenefits = [
     {
       id: 1,
-      icon: '/icons/high-performance-icon.svg',
+      icon: '/icons/new/high-performance.svg',
       header: 'Incredibly Fast',
       para: 'Our WebHosting range uses exclusively high-end Ryzen nodes with NVME disks. vShield nodes are optimized & tweaked to offer the best possible performance.',
     },
     {
       id: 2,
-      icon: '/icons/cloud-icon.svg',
+      icon: '/icons/new/cloud.svg',
       header: 'Unlimited Bandwidth',
       para: 'We offer a 99.9% uptime guarantee on all our services. Say goodbye to slow loading times and outages',
     },
     {
       id: 3,
-      icon: '/icons/sheild-icon.svg',
+      icon: '/icons/new/sheild.svg',
       header: 'HQ Anti-DDos',
       para: "With vShield's anti-ddos, attacks will become a problem of the past. Our advanced system will be able to catch & block attacks in real-time.",
     },
