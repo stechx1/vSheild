@@ -6,7 +6,7 @@ export const HeroSection = ({ header, heading, para, imgSrc }) => {
   const router = useRouter();
   return (
     <div className='flex flex-col md:flex-row justify-between items-center'>
-      <div className='max-w-[600px] space-y-6'>
+      <div className='max-w-[600px] space-y-8'>
         <div>
           <h3 className='uppercase font-bold text-gray-400'>{header}</h3>
           <h1 className='text-6xl font-bold'>{heading}</h1>

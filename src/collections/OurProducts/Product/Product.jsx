@@ -5,7 +5,7 @@ export const Product = ({ reverse, heading, para, list, imgSrc }) => {
   return (
     <div
       className={`flex flex-col md:flex-row ${
-        reverse ? 'flex-col md:flex-row-reverse' : 'flex-col md:flex-row'
+        reverse ? 'flex-col md:flex-row-reverse md:space-x-reverse md:space-x-16' : 'flex-col md:flex-row md:space-x-16'
       } justify-between items-center mb-14`}
     >
       <div className='space-y-4'>

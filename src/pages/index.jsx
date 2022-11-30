@@ -2,7 +2,6 @@
 import Head from 'next/head';
 import {
   HeroSection,
-  SocialBanner,
   BenefitsSection,
   OurProducts,
   LocationSection,
@@ -10,6 +9,7 @@ import {
   Testimonials,
   ContactSection,
 } from '../collections';
+import { HeroSlider } from '../collections/HeroSlider';
 
 const benefitsList = [
   {
@@ -41,23 +41,17 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='container px-8 mx-auto font-mont'>
-        <HeroSection
-          header={'fully dedicated resources'}
-          heading='Virtual Dedicated Servers'
-          para={
-            'Servers with fully dedicated resources, KVM virtualization and insane network speeds starting at $11.99/month'
-          }
-          imgSrc='/images/servers-tiny.png'
-        />
-        <section className='my-[80px]'>
+        <HeroSlider />
+
+        {/* <section className='my-[80px]'>
           <SocialBanner />
-        </section>
+        </section> */}
 
         <section className='my-[80px]'>
           <BenefitsSection benefitsList={benefitsList} />
         </section>
 
-        <section className='my-[120px] lg:px-32'>
+        <section className='my-[120px] lg:px-16'>
           <OurProducts />
         </section>
 
@@ -66,6 +60,10 @@ export default function Home() {
         </section>
 
         <section>
+          <Testimonials />
+        </section>
+
+        <section className='my-[80px]'>
           <OtherBenefits />
         </section>
 
