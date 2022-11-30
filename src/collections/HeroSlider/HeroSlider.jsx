@@ -32,7 +32,7 @@ export const HeroSlider = () => {
             para={
               'The best DDoS protection & hosting for your website,starting at only $6.99 per month.'
             }
-            imgSrc='/images/cloud.svg'
+            imgSrc='/images/cloud.png'
           />
         </div>
         <div>
