@@ -22,7 +22,7 @@ export const Web_Hosting_Table = ({ plans }) => {
                   </div>
                   <div className='flex flex-col my-6'>
                     <span className='text-3xl font-semibold text-white'>
-                      <sup className='mr-1'>$</sup>
+                      <span className='mr-1'>$</span>
                       {item?.price}
                     </span>
                     <span className='text-xs text-#777E91'>per month</span>

@@ -17,12 +17,12 @@ export const VDS_Pricing_table2 = ({ plans }) => {
                     style={{ color: item?.color }}
                     className={`font-semibold`}
                   >
-                    <sup className='mr-1'>$</sup>
+                    <span className='mr-1'>$</span>
                     {item?.Plan}
                   </div>
                   <div className='flex flex-col my-6'>
                     <span className='text-3xl font-semibold text-white'>
-                      <sup className='mr-1'>$</sup>
+                      <span className='mr-1'>$</span>
                       {item?.Price}
                     </span>
                     <span className='text-xs text-#777E91'>per month</span>
