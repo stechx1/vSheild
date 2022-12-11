@@ -7,13 +7,13 @@ export const Web_Hosting_Table = ({ plans }) => {
   console.log(plans);
   return (
     <>
-      <div className="overflow-x-auto relative">
+      <div className="overflow-x-auto relative z-0">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <tbody>
-            <tr className="relative">
+            <tr>
               <th scope="row" className="py-3 px-6 absolute bottom-0"></th>
               {plans?.map((item, index) => (
-                <td key={index} className="py-3 px-6 text-center">
+                <td key={index} className="py-3 px-6 text-center ">
                   <div
                     style={{ color: item?.color }}
                     className={`font-semibold`}
