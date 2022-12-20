@@ -25,11 +25,11 @@ export const WorldMap = () => {
   return (
     <div>
       <ReactTooltip>{content}</ReactTooltip>
-      <ComposableMap className=''>
+      <ComposableMap projection={"geoMercator"} projectionConfig={{center: [0, 30], scale: 120}} className=''>
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies.map((geo) => (
-              <Geography fill='#fff' key={geo.rsmKey} geography={geo} />
+              <Geography fill='#f5f5f5' key={geo.rsmKey} geography={geo} />
             ))
           }
         </Geographies>
