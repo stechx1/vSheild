@@ -8,8 +8,10 @@ import {
 
 import ReactTooltip from 'react-tooltip';
 
-const geoUrl =
-  'https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json';
+// const geoUrl =
+//   'https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json';
+
+const geoUrl = "/countries.json";
 
 export const WorldMap = () => {
   const [content, setContent] = useState('');
