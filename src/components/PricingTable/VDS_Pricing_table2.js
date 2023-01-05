@@ -6,7 +6,7 @@ export const VDS_Pricing_table2 = ({ plans }) => {
   const routes = useRouter();
   return (
     <>
-      <div className="overflow-x-auto relative">
+      <div className="overflow-x-auto relative z-0">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <tbody>
             <tr className="relative">

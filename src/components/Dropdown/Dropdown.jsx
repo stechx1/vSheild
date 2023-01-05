@@ -94,9 +94,11 @@ export const Dropdown = ({ color }) => {
                 </p>
               </Link>
 
-              <Link
+              <a
+                target="_blank"
                 onClick={() => setDropdownPopoverShow(false)}
                 href={"https://virtuo.host/"}
+                rel="noreferrer"
               >
                 <p
                   className={
@@ -106,7 +108,7 @@ export const Dropdown = ({ color }) => {
                 >
                   Colocation
                 </p>
-              </Link>
+              </a>
 
               <Link
                 onClick={() => setDropdownPopoverShow(false)}

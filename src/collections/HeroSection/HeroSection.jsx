@@ -5,7 +5,7 @@ import { Button } from '../../components';
 export const HeroSection = ({ header, heading, para, imgSrc }) => {
   const router = useRouter();
   return (
-    <div className='flex flex-col space-y-8 md:flex-row justify-between items-center'>
+    <div className='flex flex-col space-y-8 md:flex-row justify-center items-center'>
       <div className='max-w-[600px] space-y-8'>
         <div>
           <h3 className='uppercase font-bold text-gray-400'>{header}</h3>

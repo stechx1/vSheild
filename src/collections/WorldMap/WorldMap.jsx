@@ -8,8 +8,10 @@ import {
 
 import ReactTooltip from 'react-tooltip';
 
-const geoUrl =
-  'https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json';
+// const geoUrl =
+//   'https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json';
+
+const geoUrl = '/countries.json';
 
 export const WorldMap = () => {
   const [content, setContent] = useState('');
@@ -25,26 +27,40 @@ export const WorldMap = () => {
   return (
     <div>
       <ReactTooltip>{content}</ReactTooltip>
-      <ComposableMap className=''>
+      <ComposableMap
+        projection={'geoMercator'}
+        projectionConfig={{ center: [0, 30], scale: 120 }}
+        className=''
+      >
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies.map((geo) => (
-              <Geography fill='#fff' key={geo.rsmKey} geography={geo} />
+              <Geography
+                style={{
+                  default: { outline: 'none' },
+                  hover: { outline: 'none' },
+                  pressed: { outline: 'none' },
+                }}
+                fill='#f5f5f5'
+                key={geo.rsmKey}
+                geography={geo}
+              />
             ))
           }
         </Geographies>
         {markers.map(({ name, coordinates, markerOffset }) => (
-          <Marker data-tip={content}
+          <Marker
+            data-tip={content}
             key={name}
             coordinates={coordinates}
             onMouseEnter={() => {
               setContent(name);
             }}
             onMouseLeave={() => {
-              setContent("");
+              setContent('');
             }}
           >
-            <circle r={5} fill='#F00' stroke='#000' strokeWidth={1} />
+            <circle r={3} fill='#45b6fe' stroke='#000' strokeWidth={1} />
           </Marker>
         ))}
       </ComposableMap>

@@ -11,6 +11,9 @@
   "dependencies": {
     "@headlessui/react": "^1.7.4",
     "@popperjs/core": "2.9.1",
+    "d3-fetch": "^3.0.1",
+    "d3-scale": "^4.0.2",
+    "lodash": "^4.17.21",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
