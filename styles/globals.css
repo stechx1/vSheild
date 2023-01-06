@@ -19,7 +19,7 @@ html {
   }
 
   td:hover::after {
-    background-color: #23262F;
+    background-color: #202026;
     border-radius: 8px;
     content: '';
     height: 10000px;
