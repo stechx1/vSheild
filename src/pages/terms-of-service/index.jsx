@@ -84,7 +84,7 @@ const TermsPage = () => {
     },
   ];
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto px-8'>
       <div className='flex flex-col space-y-2 justify-center items-center my-[20px]'>
         <h1 className='text-5xl'>Terms of Service</h1>
         <p className='text-lg max-w-[800px] font-light text-gray-400 text-center'>

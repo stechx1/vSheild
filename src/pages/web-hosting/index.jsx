@@ -35,36 +35,38 @@ const WebHostingPage = () => {
       <Head>
         <title>VSheild - Web Hosting</title>
       </Head>
-      <section>
-        <HeroSection
-          header={'fully dedicated resources'}
-          heading='Managed Web Hosting'
-          para={
-            'The best DDoS protection & hosting for your website,starting at only $6.99 per month.'
-          }
-          imgSrc='/images/cloud.svg'
-        />
-      </section>
+      <div className='container px-8 mx-auto font-mont'>
+        <section>
+          <HeroSection
+            header={'fully dedicated resources'}
+            heading='Managed Web Hosting'
+            para={
+              'The best DDoS protection & hosting for your website,starting at only $6.99 per month.'
+            }
+            imgSrc='/images/cloud.svg'
+          />
+        </section>
 
-      <section className='my-[80px]'>
-        <BenefitsSection benefitsList={webHostingBenefits} />
-      </section>
+        <section className='my-[80px]'>
+          <BenefitsSection benefitsList={webHostingBenefits} />
+        </section>
 
-      <section className='my-[80px]'>
-        <WebPricing />
-      </section>
+        <section className='my-[80px]'>
+          <WebPricing />
+        </section>
 
-      <section className='my-[80px]'>
-        <OtherBenefits />
-      </section>
+        <section className='my-[80px]'>
+          <OtherBenefits />
+        </section>
 
-      <section className='my-[80px]'>
-        <Testimonials />
-      </section>
+        <section className='my-[80px]'>
+          <Testimonials />
+        </section>
 
-      <section className='my-[80px]'>
-        <ContactSection />
-      </section>
+        <section className='my-[80px]'>
+          <ContactSection />
+        </section>
+      </div>
     </div>
   );
 };

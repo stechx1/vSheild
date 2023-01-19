@@ -20,7 +20,7 @@ export const Dropdown = ({ color }) => {
 
   React.useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
+      if (!menuRef.current?.contains(e.target)) {
         setDropdownPopoverShow(false);
       }
     };

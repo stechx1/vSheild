@@ -7,8 +7,8 @@ export const HeroSlider = () => {
     infinite: true,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 2500,
-    speed: 500,
+    autoplaySpeed: 8000,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
   };

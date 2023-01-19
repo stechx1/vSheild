@@ -53,6 +53,7 @@ const VDSPage = () => {
       <Head>
         <title>Virtual Dedicated Servers</title>
       </Head>
+      <div className='container px-8 mx-auto font-mont'>
       <section className='container mx-auto my-[80px]'>
         <HeroSection
           header={'fully dedicated resources'}
@@ -83,6 +84,7 @@ const VDSPage = () => {
       <section className='my-[80px]'>
         <ContactSection />
       </section>
+      </div>
     </div>
   );
 };

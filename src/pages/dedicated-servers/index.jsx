@@ -70,47 +70,49 @@ const DedicatedServersPage = () => {
     },
   ];
   return (
-    <div className='container mx-auto'>
+    <div>
       <Head>
         <title>VSheild - Web Hosting</title>
       </Head>
-      <section>
-        <HeroSection
-          header={'fully dedicated resources'}
-          heading='Dedicated Servers'
-          para={
-            'Dedicated servers hosted in our own location. Custom hardware & optimized by vShield. We recommend this range for very intensive tasks. Starting at only $12.99 per month'
-          }
-          imgSrc='/images/cloud-server.svg'
-        />
-      </section>
+      <div className='container px-8 mx-auto font-mont'>
+        <section>
+          <HeroSection
+            header={'fully dedicated resources'}
+            heading='Dedicated Servers'
+            para={
+              'Dedicated servers hosted in our own location. Custom hardware & optimized by vShield. We recommend this range for very intensive tasks. Starting at only $12.99 per month'
+            }
+            imgSrc='/images/cloud-server.svg'
+          />
+        </section>
 
-      <section className='my-[80px]'>
-        <BenefitsSection benefitsList={dedicatedBenefits} />
-      </section>
+        <section className='my-[80px]'>
+          <BenefitsSection benefitsList={dedicatedBenefits} />
+        </section>
 
-      <section className='my-[80px]'>
-        <VirtualPricing />
-      </section>
+        <section className='my-[80px]'>
+          <VirtualPricing />
+        </section>
 
-      <section>
-        <BenefitsSection
-          heading={'Other Benefits You ll get'}
-          delSubHeading
-          benefitsList={vdsBenefits}
-        />
-      </section>
-      <section className='my-[80px]'>
-        <OtherBenefits />
-      </section>
+        <section>
+          <BenefitsSection
+            heading={'Other Benefits You ll get'}
+            delSubHeading
+            benefitsList={vdsBenefits}
+          />
+        </section>
+        <section className='my-[80px]'>
+          <OtherBenefits />
+        </section>
 
-      <section className='my-[80px]'>
-        <Testimonials />
-      </section>
+        <section className='my-[80px]'>
+          <Testimonials />
+        </section>
 
-      <section className='my-[80px]'>
-        <ContactSection />
-      </section>
+        <section className='my-[80px]'>
+          <ContactSection />
+        </section>
+      </div>
     </div>
   );
 };

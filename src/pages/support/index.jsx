@@ -8,7 +8,7 @@ const Support = () => {
     <Head>
       <title>Support</title>
     </Head>
-    <div className='container mx-auto flex flex-col justify-center items-center'>
+    <div className='container mx-auto flex flex-col justify-center items-center px-8'>
       <h1 className='text-6xl'>Support</h1>
       <div className='my-[80px] grid grid-cols-2 gap-12 md:grid-cols-3 lg:grid-cols-4'>
         {/* Discord */}
