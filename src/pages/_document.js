@@ -4,6 +4,11 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <script
+          type='text/javascript'
+          src='//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js'
+          async
+        ></script>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link

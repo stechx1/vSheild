@@ -10,6 +10,14 @@ import {
   ContactSection,
 } from '../collections';
 import { HeroSlider } from '../collections/HeroSlider';
+import dynamic from 'next/dynamic';
+
+// import TrustBox from '../components/TrustBox/TrustBox';
+
+const TrustBox = dynamic(() => import('../components/TrustBox/TrustBox'), {
+  ssr: false,
+  loading: () => <div>Loading...</div>,
+});
 
 const benefitsList = [
   {
@@ -61,6 +69,7 @@ export default function Home() {
 
         <section>
           <Testimonials />
+          <TrustBox suppressHydrationWarning={true} />
         </section>
 
         <section className='my-[80px]'>
